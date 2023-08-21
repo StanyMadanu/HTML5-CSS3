@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Flexbox Layout 1</title>
+
+    <meta charset="utf-8">
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            display: flex;
+            flex-direction:column;
+        }
+
+        #wrapper-div{
+            display:flex;
+            flex-direction:column;
+            width:60%;
+            min-height:100px;
+            margin: auto;
+        }
+
+        #logo-div{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            min-height:50px;
+            background-color:lightgray;
+            align-items:center;
+            padding-left:10px;
+        }
+
+        #nav-div{
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            min-height:30px;
+            background-color:lightgray;
+            margin-top:10px;
+            justify-content:center;
+            align-items:center;
+        }
+
+        #header-banner-div{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            min-height: 70px;
+            background-color:lightgray;
+            margin-top: 10px;
+            justify-content:center;
+            align-items: center;
+        }
+
+        #main-div{
+            display: flex;
+            flex-direction:row;
+            width: 100%;
+            min-height: 400px;
+            margin-top: 10px;
+            justify-content:space-between;
+        }
+
+        #sidebar-div{
+            display: flex;
+            flex-direction:row;
+            flex-basis:25%;
+            background-color:lightgray;
+            align-items:center;
+            justify-content:center;
+        }
+
+        #bodyarea-div{
+            display:flex;
+            flex-direction:row;
+            flex-basis:70%;
+            background-color:lightgray;
+            justify-content:center;
+            align-items:center;
+        }
+
+        #footer-div{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            min-height:30px;
+            background-color:lightgray;
+            margin-top:10px;
+            align-items:center;
+            justify-content:center;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div id="wrapper-div">
+        <div id="logo-div">
+            Logo
+        </div>
+
+        <div id="nav-div">
+            Navigation
+        </div>
+
+        <div id="header-banner-div">
+            Header / Banner
+        </div>
+
+        <div id="main-div">
+            <div id="sidebar-div">
+                Side Bar
+            </div>
+            <div id="bodyarea-div">
+                Body Area
+            </div>
+        </div>
+
+        <div id="footer-div">
+            Footer
+        </div>
+
+
+   </div>
+
+</body>
+</html>

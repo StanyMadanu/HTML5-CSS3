@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Layout 4</title>
+
+        <style>
+
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: Arial;
+            }
+
+            #wrapper-div{
+                width: 80%;
+                margin: auto;
+            }
+
+            #logo-nav-div{
+                width:100%;
+                min-height: 50px;
+                background-color: lightgray;
+                margin-bottom: 10px;
+            }
+
+            #logo-div{
+                width: 50%;
+                min-height: 50px;
+                float: left;
+                padding-left: 2%;
+                line-height: 50px;
+            }
+
+            #nav-div{
+                width: 50%;
+                min-height: 50px;
+                float: right;
+                line-height: 50px;
+            }
+
+            .clearfix::after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+
+            .row{
+                width: 100%;
+                min-height: 100px;
+                
+            }
+
+            .col{
+                width: 20%;
+                min-height: 100px;
+                background-color:lightgray;
+                float: left;
+                margin-bottom: 10px;
+
+            }
+
+            .col:nth-child(2), .col:nth-child(3){
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            #boxes{
+                width: 100%;
+                min-height: 100px;
+
+            }
+
+            .box{
+                width: 30%;
+                min-height: 100px;
+                background-color: lightgray;
+                float: left;
+                text-align: center;
+                line-height: 150px;
+            }
+
+            .box:nth-child(2){
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            #footer-div{
+                width: 100%;
+                min-height: 50px;
+                background-color: lightgray;
+                margin-top: 10px;
+                text-align: center;
+                line-height:50px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="wrapper-div">
+
+            <div id="logo-nav-div" class="clearfix">
+                <div id="logo-div">
+                    Logo
+                </div>
+                <div id="nav-div">
+                    Navigation
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row clearfix">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row clearfix">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row clearfix">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+
+            <div id="boxes" class="clearfix">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        
+            <div id="footer-div">
+                Footer
+            </div>
+        </div>
+    </body>
+
+</html>

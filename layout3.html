@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Layout 3</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial;
+            }
+
+            #wrapper-div {
+                width: 60%;
+                margin: auto;
+            }
+
+            #logo-div {
+                width: 100%;
+                min-height: 50px;
+                background-color: lightgray;
+                padding-left: 2%;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+
+            #main-div{
+                width: 100%;
+                min-height: 400px;
+                
+            }
+
+            #left-side-div{
+                width: 30%;
+                min-height: 80px;
+                float: left;
+
+        
+            }
+
+            #right-side-div{
+                width: 60%;
+                min-height: 400px;
+                float: right;
+            }
+
+            #header-banner-div{
+                width: 100%;
+                min-height: 80px;
+                background-color:lightgray;
+                margin-bottom: 20px;
+                text-align: center;
+                line-height: 80px;
+
+            }
+
+            #body-area-div{
+                width: 100%;
+                min-height: 300px;
+                background-color:lightgray;
+                text-align: center;
+                line-height: 300px;
+            }
+
+            .clearfix::after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+
+            #footer-div{
+                width: 100%;
+                min-height: 30px;
+                background-color: lightgray;
+                margin-top: 10px;
+                text-align: center;
+                line-height: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper-div">
+
+            <div id="logo-div">
+                Logo
+            </div>
+
+            <div id="main-div" class="clearfix">
+                <div id="left-side-div">
+                    <div>Side bar</div>
+                    <div>Navigation</div>
+                </div>
+
+                <div id="right-side-div">
+                    <div id="header-banner-div">Header / Banner</div>
+                    <div id="body-area-div">Body Area</div>
+                </div>
+            </div>
+
+            <div id="footer-div">
+                Footer
+            </div>
+
+
+        </div>
+    </body>
+</html>

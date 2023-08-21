@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Flexbox Layout 3</title>
+        <meta charset="utf-8">
+
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+                font-family:arial;
+                box-sizing:border-box;
+            }
+
+            body{
+                display:flex;
+                flex-direction:column;
+            }
+
+            #wrapper-div{
+                display: flex;
+                flex-direction: column;
+                width:60%;
+                min-height:100px;
+                margin:auto;
+            }
+
+            #logo-div{
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                min-height:50px;
+                background-color:lightgray;
+                align-items:center;
+                padding-left:2%;
+            }
+
+            #main-div{
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                min-height:450px;
+                margin-top:10px;
+                justify-content:space-between;
+            }
+
+            #leftside-div{
+                display: flex;
+                flex-direction: column;
+                flex-basis:20%;
+            }
+
+            #rightside-div{
+                display: flex;
+                flex-direction: column;
+                flex-basis:70%;
+
+            }
+
+            #header-banner-div{
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                min-height:50px;
+                background-color: lightgray;
+                align-items:center;
+                justify-content:center;
+            }
+
+            #bodyarea-div{
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                min-height:400px;
+                background-color:lightgray;
+                margin-top:10px;
+                justify-content:center;
+                align-items:center;
+            }
+
+            #footer-div{
+                display: flex;
+                flex-direction: row;
+                width:100%;
+                min-height: 30px;
+                background-color: lightgray;
+                justify-content:center;
+                align-items:center;
+                margin-top:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="wrapper-div">
+            <div id="logo-div">
+                Logo
+            </div>
+
+            <div id="main-div">
+                <div id="leftside-div">
+                    <div>Side bar</div>
+                    <div>Navigation</div>
+                </div>
+                <div id="rightside-div">
+                    <div id="header-banner-div">
+                        Header / Banner
+                    </div>
+                    <div id="bodyarea-div">
+                        Body Area
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-div">
+                Footer
+            </div>
+
+        </div>
+
+    </body>
+</html>
