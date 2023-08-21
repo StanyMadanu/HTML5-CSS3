@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Layout Practice</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+
+            #header-div {
+                width: 100%;
+                min-height: 50px;
+                background-color: orange;
+                padding-left: 2%;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+
+            #main-div {
+                width: 100%;
+                min-height: 500px;
+                margin-bottom: 10px;
+
+            }
+
+            #nav-div {
+                width: 20%;
+                min-height: 500px;
+                background-color: orange;
+                float: left;
+                padding: 2%;
+            }
+
+            #article-div {
+                display: inline-block;
+                width: 50%;
+                min-height: 500px;
+                background-color: orange;
+                margin-left: 5%;
+                padding: 2%;
+
+            }
+
+
+            #ads-div {
+                width: 20%;
+                min-height: 500px;
+                background-color: orange;
+                float: right;
+                padding: 2%;
+            }
+
+            .clearfix::after {
+                content: "";
+                display: block;
+                clear: both;
+
+            }
+
+            #footer-div {
+                width: 100%;
+                min-height: 50px;
+                background-color: orange;
+                padding-left: 2%;
+                line-height: 50px;
+            }
+
+            #wrapper-div{
+                width: 80%;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="wrapper-div">
+
+            <div id="header-div">
+                Header
+            </div>
+
+            <div id="main-div" class="clearfix">
+                <div id="nav-div">
+                    Nav
+                </div>
+                <div id="article-div">
+                    Article
+                </div>
+                <div id="ads-div">
+                    Ads
+                </div>
+            </div>
+
+            <div id="footer-div">
+                Footer
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
