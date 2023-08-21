@@ -1,0 +1,47 @@
+.square-box, .circle{
+    display:inline-block;
+    width:20%;
+    height:20%;
+    background-color:red;
+    margin-right:10px;
+}
+
+.circle{
+    background-color:green;
+    border-radius:50%;
+}
+
+.div3{
+    display:inline-block;
+    padding:10px 50px 10px 10px;
+    border:1px solid;
+    vertical-align: top;
+}
+
+.div4{
+    display:inline-block;
+    padding:5px;
+    background-color:grey;
+    color:white;
+}
+
+/*Nested Layout techniques*/
+.youtube-thumbnail{
+    display:inline-block;
+
+}
+
+.img-thumb{
+    width:150px;
+}
+
+.video-info{
+    display:inline-block;
+    vertical-align:top;
+}
+
+/*FlexBox*/
+.container{
+    display:flex;
+    flex-direction:column-reverse;
+}
